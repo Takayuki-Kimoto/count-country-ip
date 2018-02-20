@@ -1,0 +1,9 @@
+# github / gitignore
+# https://github.com/github/gitignore
+# ------------------------------------
+
+vendor/*
+.project
+.buildpath
+count-country.txt
+GeoLite2-Country.mmdb
