@@ -37,12 +37,13 @@ echo date($dateformat), 'analyze country end', PHP_EOL;
 
 $result = array();
 foreach ($temp as $isocode => $cnt) {
-    $result[] = $isocode + "\t" + $cnt;
+    $result[] = $isocode . "\t" . $cnt;
 }
 
 $reader->close();
-file_put_contents($outputfile, $result);
+file_put_contents($outputfile, implode("\n", $result));
 
 echo date($dateformat), 'process end', PHP_EOL;
 
 exit(0);
+
